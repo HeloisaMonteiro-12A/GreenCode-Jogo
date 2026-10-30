@@ -17,7 +17,7 @@
 </style>
 </head>
 <body>
-<canvas id="c" width="960" height="540" tabindex="0" aria-label="Guardiões do Ritmo, jogo de plataforma"></canvas>
+<canvas id="c" width="960" height="540" tabindex="0" aria-label="GreenCode, jogo de plataforma"></canvas>
 <p class="hint">Setas ou A/D: mover · Shift: correr · Espaço: pular · J: atacar (flecha ou orbe) · H: usar frasco de cura · Segurar Espaço no ar: planar (Umbra) · N: música · Esc: menu. O jogo não usa luzes piscantes.</p>
 <script>
 (() => {
@@ -373,7 +373,7 @@ function menuPose(i, on, tt) {
 function drawMenu(tt) {
   bg(tt * 0.02, tt);
   ctx.textAlign = "center"; ctx.fillStyle = "#e8f4f2"; ctx.font = "bold 40px system-ui";
-  ctx.fillText("Guardiões do Ritmo", W/2, 62);
+  ctx.fillText("GreenCode", W/2, 62);
   ctx.font = "16px system-ui"; ctx.fillStyle = "#8fe3e0";
   ctx.fillText("Escolha seu protagonista e a fase · versão beta", W/2, 92);
   ctx.textAlign = "right"; ctx.font = "12px system-ui"; ctx.fillStyle = "rgba(232,244,242,.6)";
@@ -816,7 +816,7 @@ function setWin() { state = "win"; G.endT = 0; G.starN = 0; }
 const WINTXT = [
   { t:"Fase 1 concluída!", s:"O Nó Central foi restaurado. Seu protagonista segue com você.", next:"Próxima: Fase 2 · Vale das Ondas", b:"Ir para a Fase 2" },
   { t:"Fase 2 concluída!", s:"O Guardião das Ondas caiu e o portal se abriu.", next:"Próxima: Fase 3 · Núcleo, onde mora A Tempestade", b:"Ir para a Fase 3" },
-  { t:"Vitória final!", s:"A Tempestade foi dissipada e os Guardiões do Ritmo restauraram o Núcleo. Fim da versão beta.", next:"Obrigado por jogar!", b:"Jogar de novo" }
+  { t:"Vitória final!", s:"A Tempestade foi dissipada e Skully e Umbra restauraram o Núcleo. Fim da versão beta.", next:"Obrigado por jogar!", b:"Jogar de novo" }
 ];
 const CARD = { x:130, y:18, w:700, h:504 };
 const winBtns = [{ x:300, y:460, w:170, h:44 }, { x:490, y:460, w:170, h:44 }];
